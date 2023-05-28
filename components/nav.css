@@ -1,0 +1,98 @@
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    gap: 80%;
+    width: 210px;
+    background-color: rgb(222, 182, 247);
+    padding: 10%;
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+}
+.nav-bar.profil{
+  display: flex;
+  margin-top: 10%;
+  flex-direction: column;
+  font-size: x-large;
+  gap: 80%;
+  width: 210px;
+  background-color: rgb(222, 182, 247);
+  padding: 10%;
+  border-radius: 20px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+}
+.nav-profil{
+  margin-top: 6%;
+}
+.nav{
+    color: rgb(0, 0, 0);
+    margin-top: 8%;
+    font-size: x-large;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.nav:hover{
+    background-color: rgb(243, 235, 245);
+    padding: 10px;
+    border-radius: 20px;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.logo{
+    width: 70px;
+    animation: rotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.nav-button{
+  display: none;
+}
+
+@media screen and (max-width:1200px){
+  .nav-bar {
+    position: absolute;
+    left: -400px;
+    top: 200px;
+    padding: 20px;
+    transition: left ease-in-out 0.5s;
+  }
+  .nav-bar.active {
+    left: -40px;
+  }
+
+  .nav-bar.profil {
+    top: 30px;
+  }
+
+  .nav-bar.active.profil{
+    left: -42px;
+    padding: 20px;
+  }
+  .nav-bar.active.user{
+    left: -42px;
+    
+  }
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 1.6s ease-in-out;
+    z-index: 1;
+  }
+  
+  .overlay.show {
+    display: block;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,55 @@
+.banniere-profil{
+    width: 523px;
+    height: 200px;
+}
+.head-profil{
+    display: flex;
+    flex-direction: column;
+    min-height: 1340px;
+    margin-left: 2%;
+}
+.head-img{
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 120px;
+}
+.head-name{
+    font-size: xx-large;
+    margin: 0;
+}
+.bio{
+    background-color: #EDEEC9;
+    border-radius: 30px;
+}
+.head{
+    position: relative;
+    bottom: 60px;
+    padding-left: 40px;
+    z-index: 0;
+}
+.head-pseudo{
+    font-size: x-large;
+}
+.profil-tweet{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+@media screen and (max-width:1200px){
+    .head-profil{
+        border-right: white;
+        width: 100%;
+    }
+    .respo-content{
+        width: 100%;
+    }
+    .banniere-profil{
+        width: 100%;
+    }
+    .main-profil{
+        margin-left: 0;
+    }
+  }

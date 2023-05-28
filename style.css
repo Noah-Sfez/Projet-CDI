@@ -1,0 +1,85 @@
+@import url(./components/header.css);
+@import url(./components/post.css);
+@import url(./components/nav.css);
+@import url(./components/modal.css);
+@import url(./components/inscription.css);
+@import url(./components/connexion.css);
+@import url(./components/type.css);
+@import url(./components/profil.css);
+@import url(./components/settings.css);
+@import url(./components/recherche.css);
+
+* {
+ /*outline: 1px solid red;*/
+  box-sizing: border-box;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: unset;
+  }
+  
+  main{
+    display: flex;
+    margin-left: 33.3%;
+  }
+  body{
+    background-color: var(--background-clair);
+    display: flex;
+    flex-direction: column;
+  }
+  textarea{
+    border-color: rgb(222, 182, 247);
+    background-color: rgb(222, 182, 247);
+    resize: none;
+    color: white;
+    font-size: medium;
+  }
+.space-top{
+    margin-top: 2%;
+    display: flex;
+}
+.bienvenue{
+    display: flex;
+    justify-content: center;
+    animation: deplacement 3.5s linear forwards;
+}
+@keyframes deplacement {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+.logo-lotus{
+    width: 5%;
+    height: 3%;
+}
+
+.dark-mode{
+  background-color: var(--background-dark);
+}
+
+:root{
+    --couleur-sport: #E38181;
+    --couleur-politique: #AC9F9F;
+    --couleur-musique: #BE86B9;
+    --couleur-divertissement: #CFD492;
+    --couleur-cinema: #383638;
+    --couleur-voyage: #99D89C;
+    --couleur-cuisine: #999FD4;
+    --couleur-art: #DEACE2;
+    --violet-lotus: rgb(171, 86, 162);
+    --background-dark: black;
+    --background-clair: white;
+  }
+
+  @media screen and (max-width: 1200px) {
+    main {
+      margin: 0;
+    }
+    .logo-lotus{
+      width: 10%;
+    }
+  }

@@ -1,0 +1,8 @@
+.back-settings{
+    width: 1000px;
+    background-color: #EDEEC9;
+    display: flex;
+    justify-content: center;
+    height: 95%;
+    position: fixed;
+}
